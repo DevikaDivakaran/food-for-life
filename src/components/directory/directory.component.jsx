@@ -12,19 +12,19 @@ class Directory extends React.Component {
       sections: [
         {
           title: 'KOCHI',
-          imageUrl: 'https://i.ytimg.com/vi/BNCKblnH390/maxresdefault.jpg',
+          imageUrl: 'https://c1.wallpaperflare.com/preview/988/16/35/sunset-kerala-aleppay-boat.jpg',
           id: 1,
           linkUrl: ''
         },
         {
           title: 'HYDERABAD',
-          imageUrl: 'https://i.ytimg.com/vi/ZKxDXSpnP2I/hqdefault.jpg',
+          imageUrl: 'https://st2.depositphotos.com/1141099/6198/i/600/depositphotos_61983329-stock-photo-historic-charminar.jpg',
           id: 2,
           linkUrl: ''
         },
         {
           title: 'BANGALORE',
-          imageUrl: 'https://roofandfloor.thehindu.com/real-estate-blog/wp-content/uploads/sites/14/2018/12/Bangalore-2018-WRAP-UP-840x480.jpg',
+          imageUrl: 'https://image3.mouthshut.com/images/Restaurant/Photo/-81988_8621.jpg',
           id: 3,
           linkUrl: ''
         }

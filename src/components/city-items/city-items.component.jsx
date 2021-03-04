@@ -16,13 +16,15 @@ const CityItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
           backgroundImage: `url(${imageUrl})`
         }}
       />
+      
       <div className='content'>
         <h1 className='title'>{title.toUpperCase()}</h1>
-        <span className='subtitle'>
-            <Link className='link' to='/restaurant'>Go</Link>
+        <span>
+            <a className='subtitle' href='/restaurant'>Go</a>
         </span>
       </div>
     </div>
+    
   );
   
   export default withRouter(CityItem);
