@@ -19,7 +19,7 @@ const CityItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
       <div className='content'>
         <h1 className='title'>{title.toUpperCase()}</h1>
         <span className='subtitle'>
-            <Link to='/restaurant'>Go</Link>
+            <Link className='link' to='/restaurant'>Go</Link>
         </span>
       </div>
     </div>
