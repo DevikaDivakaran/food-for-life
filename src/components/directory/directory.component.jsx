@@ -1,8 +1,8 @@
 import React from 'react';
 
-import MenuItem from '../city-items/city-items.component';
+import CityItem from '../city-items/city-items.component';
 
-//import './directory.styles.scss';
+import './directory.styles.scss';
 
 class Directory extends React.Component {
   constructor() {
@@ -12,19 +12,19 @@ class Directory extends React.Component {
       sections: [
         {
           title: 'KOCHI',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          imageUrl: 'https://i.ytimg.com/vi/BNCKblnH390/maxresdefault.jpg',
           id: 1,
           linkUrl: ''
         },
         {
           title: 'HYDERABAD',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          imageUrl: 'https://i.ytimg.com/vi/ZKxDXSpnP2I/hqdefault.jpg',
           id: 2,
           linkUrl: ''
         },
         {
           title: 'BANGALORE',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          imageUrl: 'https://roofandfloor.thehindu.com/real-estate-blog/wp-content/uploads/sites/14/2018/12/Bangalore-2018-WRAP-UP-840x480.jpg',
           id: 3,
           linkUrl: ''
         }
@@ -36,7 +36,7 @@ class Directory extends React.Component {
     return (
       <div className='directory-menu'>
         {this.state.sections.map(({ id, ...otherSectionProps }) => (
-          <MenuItem key={id} {...otherSectionProps} />
+          <CityItem key={id} {...otherSectionProps} />
         ))}
       </div>
     );
