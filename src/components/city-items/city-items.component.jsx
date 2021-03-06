@@ -7,7 +7,9 @@ import {Link} from 'react-router-dom' //used for routing to the pages
 
 const CityItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
     
-    <Link to='/restaurant'
+   
+    <Link to='/restaurant'  
+      
       className={`${size} city-item`}
       onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
@@ -17,13 +19,13 @@ const CityItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
           backgroundImage: `url(${imageUrl})`
         }}
       />
-      
       <div className='content'>
         <h1 className='title'>{title.toUpperCase()}</h1>
         
       </div>
-     
+      
     </Link>
+    
 
 
   );

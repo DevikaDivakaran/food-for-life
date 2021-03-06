@@ -53,6 +53,7 @@ class App extends React.Component {
               )
             }
           />
+          <Route path='/restaurant' component={RestaurantPage}/>
       </Switch>
       </div>
     );
