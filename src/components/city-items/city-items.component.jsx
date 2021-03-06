@@ -6,6 +6,7 @@ import './city-items.styles.scss'
 import {Link} from 'react-router-dom' //used for routing to the pages
 
 const CityItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
+    
     <div
       className={`${size} city-item`}
       onClick={() => history.push(`${match.url}${linkUrl}`)}
@@ -28,7 +29,6 @@ const CityItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
         </span>
       </div>
     </div>
-    
   );
   
   export default withRouter(CityItem);
