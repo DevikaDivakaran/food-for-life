@@ -1,7 +1,7 @@
 import React from 'react';
-import { Route, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
-const Items = ({ title, imageUrl, size, history, linkUrl, match }) => (
+const Items = ({ id, title, imageUrl, size, history, linkUrl, match }) => (
   <div
     className={`${size} items`}
     onClick={() => history.push(`${match.url}${linkUrl}`)}

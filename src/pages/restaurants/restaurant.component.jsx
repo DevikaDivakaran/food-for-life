@@ -1,11 +1,31 @@
 import React from 'react';
-const RestaurantPage = () => (
+import restaurant_data from './restaurant_data.js';
+import Items from '../../components/restaurant-item/items.component';
+class RestaurantPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {collections : restaurant_data[this.props.match.param.id].items};
+
+    console.log(restaurant_data.items);
+  }
+
+
+  render(){
   
-  <div className='restaurant'>
+      const { collections } = this.state;
+          return(
+              <div className='restaurantpage'>
+                  {collections.map(({ id, ...otherSectionProps }) => (
+                  <Items key={id} {...otherSectionProps} />
+                  ))}
+                </div>
+  
+            );
     
-    <h1> </h1>
-  </div>
-);
+  }
 
 
+
+
+}
 export default RestaurantPage;
